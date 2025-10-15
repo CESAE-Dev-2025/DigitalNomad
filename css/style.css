@@ -9,8 +9,7 @@
 
 /***                                                           Common styles */
 body {
-    background-color: #b49b2c40;
-    /* background-color: rgba(180, 155, 44, 0.25); */
+    background-color: rgba(180, 155, 44, 0.25);
 }
 header {
     font-family: "Jura", sans-serif;
@@ -31,7 +30,6 @@ footer #social {
 }
 footer #footer-header {
     font-size: 30px;
-    text-decoration: none; /* class text-decoration-none */
 }
 footer #footer-copyright {
     font-size: 15px;
@@ -49,7 +47,6 @@ footer #footer-copyright {
 #hero > h1 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
-    font-weight: bold; /* class fw-bold */
     font-size: 85px;
 }
 #hero > img {
@@ -135,10 +132,6 @@ footer #footer-copyright {
     border: 3px solid white;
     border-radius: 35px;
     color: white;
-    /* padding-top: 18px;
-    padding-bottom: 18px;
-    padding-right: 85px;
-    padding-left: 85px; */
     padding: 18px 85px;
     font-size: 25px;
 }
