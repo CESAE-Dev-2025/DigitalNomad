@@ -42,6 +42,8 @@ footer #footer-copyright {
 #hero {
     background-image: url("/images/Hero.png");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 816px;
 }
 #hero > h1 {
