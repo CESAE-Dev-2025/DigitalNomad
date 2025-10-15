@@ -53,12 +53,44 @@
     <!-- page content -->
     <main>
         <!-- Hero section -->
+        <!-- 
+        Não usei a classe container porque o conteúdo é apenas um H1, que será centralizado na mesma.
+         -->
         <section id="hero" class="bg-image text-center d-flex align-items-center justify-content-center">
             <h1 class="text-uppercase text-white">Living Around</h1>
         </section>
 
         <!-- Jobs content -->
-        <section id="jobs"></section>
+        <section id="jobs">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="align-items-center text-black"> -->
+                    <div class="col-6 d-flex align-items-center job-quote">
+                        <p class="align-middle m-0">Viva <span class="quote-emphasis">livre</span>, trabalhe de qualquer
+                            lugar, descubra o <span class="quote-emphasis">mundo</span>.</p>
+                    </div>
+                    <div class="col-6 job-details align-items-center">
+                        <h2 class="text-center">Trabalhos Remotos</h2>
+                        <div id="job-list" class="fancy-corners d-flex justify-content-around">
+                            <ul>
+                                <li>Indeed</li>
+                                <li>LinkedIn</li>
+                                <li>JobRemote</li>
+                                <li>GoogleJobs</li>
+                            </ul>
+                            <ul>
+                                <li>Indeed</li>
+                                <li>LinkedIn</li>
+                                <li>JobRemote</li>
+                                <li>GoogleJobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
         <section id="locations"></section>
         <section id="destinations"></section>
         <section id="blog"></section>

@@ -8,6 +8,10 @@
 /*****************************************************************************/
 
 /***                                                           Common styles */
+body {
+    background-color: #b49b2c40;
+    /* background-color: rgba(180, 155, 44, 0.25); */
+}
 header {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
@@ -48,5 +52,61 @@ footer #footer-copyright {
 }
 #hero > img {
     max-height: 816px;
+}
+/*****************************************************************************/
+
+/***                                                             Jobs styles */
+
+#jobs {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    padding: 46px 112px;
+}
+.job-quote {
+    font-size: 43px;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    padding: 46px 65px;
+    border-right: 1px solid black;
+}
+.quote-emphasis {
+    color: #686931;
+    font-weight: bold;
+}
+.job-details {
+    padding: 65px;
+}
+.job-details > h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+#job-list {
+    padding: 40px 0px;
+    font-weight: bold;
+}
+.fancy-corners {
+    --b: 10px; /* thickness of the border */
+    --c: black; /* color of the border */
+    --w: 50px; /* width of border */
+
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+
+    background: conic-gradient(
+                from 90deg at top var(--b) left var(--b),
+                var(--_g)
+            )
+            0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+            100% 100% / var(--_p);
+}
+#job-list > ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
 }
 /*****************************************************************************/
