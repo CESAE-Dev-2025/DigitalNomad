@@ -10,6 +10,7 @@
 /***                                                           Common styles */
 body {
     background-color: rgba(180, 155, 44, 0.25);
+    overflow-x: hidden;
 }
 header {
     font-family: "Jura", sans-serif;
@@ -37,19 +38,23 @@ footer #footer-copyright {
 /*****************************************************************************/
 
 /***                                                             Hero styles */
-#hero {
-    background-image: url("/images/Hero.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 816px;
+.bg-image {
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-#hero > h1 {
+.hero-header {
+    height: calc(816px - 70px);
+}
+.hero-header > h1 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
     font-size: 85px;
 }
-#hero > img {
+#hero img {
     max-height: 816px;
 }
 /*****************************************************************************/
