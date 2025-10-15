@@ -6,3 +6,9 @@
 /**     Josefin Slab */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*****************************************************************************/
+
+header {
+    font-family: "Jura", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
