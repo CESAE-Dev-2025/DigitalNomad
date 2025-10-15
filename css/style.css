@@ -56,7 +56,6 @@ footer #footer-copyright {
 /*****************************************************************************/
 
 /***                                                             Jobs styles */
-
 #jobs {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
@@ -108,5 +107,37 @@ footer #footer-copyright {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
+}
+/*****************************************************************************/
+
+/***                                                          Offices styles */
+#offices {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
+}
+.offices-bg {
+    padding-top: 120px;
+    background-image: url("/images/kombi.png");
+    min-height: 515px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.offices-text {
+    font-size: 30px;
+}
+.btn-offices {
+    border: 3px solid white;
+    border-radius: 35px;
+    color: white;
+    /* padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 85px;
+    padding-left: 85px; */
+    padding: 18px 85px;
+    font-size: 25px;
 }
 /*****************************************************************************/
