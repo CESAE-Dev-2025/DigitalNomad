@@ -7,8 +7,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*****************************************************************************/
 
+/***                                                           Common styles */
 header {
     font-family: "Jura", sans-serif;
     font-size: 25px;
     font-weight: bold;
+}
+footer {
+    font-family: "Jura", sans-serif;
+    font-weight: bold;
+    padding: 46px;
+}
+footer #social {
+    margin-top: 28px;
+    margin-bottom: 35px;
+    opacity: 0.4;
+}
+footer #footer-header {
+    font-size: 30px;
+    text-decoration: none;
+}
+footer #footer-copyright {
+    font-size: 15px;
 }
