@@ -38,24 +38,17 @@ footer #footer-copyright {
 /*****************************************************************************/
 
 /***                                                             Hero styles */
-.bg-image {
-    width: 100vw;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero {
+    background-image: url("/images/Hero.png");
+    background-size: cover;
+    background-position: center;
+    height: 816px;
     z-index: -1;
 }
-.hero-header {
-    height: calc(816px - 70px);
-}
-.hero-header > h1 {
+.hero-heading > h1 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
     font-size: 85px;
-}
-#hero img {
-    max-height: 816px;
 }
 /*****************************************************************************/
 

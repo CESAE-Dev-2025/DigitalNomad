@@ -21,103 +21,100 @@
 <body>
     <!-- Page header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent">
-            <div class="container">
-                <!-- <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="Bootstrap" width="30" height="24">
-                </a> -->
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link opacity-100 ps-4" href="#">Acomodação</a>
-                        </li>
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link opacity-100 ps-4" href="#">Locais</a>
-                        </li>
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link opacity-100 ps-4" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link opacity-100 ps-4" href="#">Contatos</a>
-                        </li>
-                    </ul>
+        <div class="hero d-flex">
+
+            <div class="container d-flex flex-column">
+
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg bg-transparent">
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link opacity-100 ps-4" href="#">Acomodação</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link opacity-100 ps-4" href="#">Locais</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link opacity-100 ps-4" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link opacity-100 ps-4" href="#">Contatos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <!-- Hero section -->
+                <!-- TODO: Resolver deslocamento do texto ao clicar no menu hemburguer -->
+                <div class="hero-heading flex-fill d-flex">
+                    <h1 class="text-uppercase text-white text-center fw-bold m-auto">Living Around</h1>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- page content -->
-    <main>
-        <!-- Hero section -->
-        <!-- 
-        Não usei a classe container porque o conteúdo é apenas um H1, que será centralizado na mesma.
-         -->
-        <section id="hero" class="d-flex justify-content-center">
-            <img src="images/Hero.png" class="bg-image" alt="">
-            <div class="hero-header d-flex align-items-center mx-auto">
-                <h1 class="text-uppercase text-white fw-bold">Living Around</h1>
-            </div>
-        </section>
-
-        <!-- Jobs content -->
-        <section id="jobs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 d-flex align-items-center job-quote">
-                        <p class="align-middle m-0">Viva <span class="quote-emphasis">livre</span>, trabalhe de qualquer
-                            lugar, descubra o <span class="quote-emphasis">mundo</span>.</p>
-                    </div>
-                    <div class="col-6 job-details align-items-center">
-                        <h2 class="text-center">Trabalhos Remotos</h2>
-                        <div id="job-list" class="fancy-corners d-flex justify-content-around">
-                            <ul>
-                                <li>Indeed</li>
-                                <li>LinkedIn</li>
-                                <li>JobRemote</li>
-                                <li>GoogleJobs</li>
-                            </ul>
-                            <ul>
-                                <li>Indeed</li>
-                                <li>LinkedIn</li>
-                                <li>JobRemote</li>
-                                <li>GoogleJobs</li>
-                            </ul>
-                        </div>
+    <!-- Jobs content -->
+    <section id="jobs">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center job-quote">
+                    <p class="align-middle m-0">Viva <span class="quote-emphasis">livre</span>, trabalhe de qualquer
+                        lugar, descubra o <span class="quote-emphasis">mundo</span>.</p>
+                </div>
+                <div class="col-6 job-details align-items-center">
+                    <h2 class="text-center">Trabalhos Remotos</h2>
+                    <div id="job-list" class="fancy-corners d-flex justify-content-around">
+                        <ul>
+                            <li>Indeed</li>
+                            <li>LinkedIn</li>
+                            <li>JobRemote</li>
+                            <li>GoogleJobs</li>
+                        </ul>
+                        <ul>
+                            <li>Indeed</li>
+                            <li>LinkedIn</li>
+                            <li>JobRemote</li>
+                            <li>GoogleJobs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Offices section -->
-        <section id="offices">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5 offices-bg"></div>
+    <!-- Offices section -->
+    <section id="offices">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offices-bg"></div>
 
-                    <div class="col-7 d-flex align-items-center offices-cta">
-                        <div class="align-middle m-0 d-flex flex-column align-items-center mx-auto">
-                            <div class="offices-text text-center text-wrap mb-3" style="width: 360px;">
-                                Descubra o seu novo escritório
-                            </div>
-                            <a href="#" class="btn btn-offices">Descobrir</a>
+                <div class="col-7 d-flex align-items-center offices-cta">
+                    <div class="align-middle m-0 d-flex flex-column align-items-center mx-auto">
+                        <div class="offices-text text-center text-wrap mb-3" style="width: 360px;">
+                            Descubra o seu novo escritório
                         </div>
+                        <a href="#" class="btn btn-offices">Descobrir</a>
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+        </div>
+    </section>
 
-        <!-- Destinations section -->
-        <section id="destinations"></section>
+    <!-- Destinations section -->
+    <section id="destinations"></section>
 
-        <!-- Blog section -->
-        <section id="blog"></section>
-    </main>
+    <!-- Blog section -->
+    <section id="blog"></section>
 
     <footer class="bg-black">
         <div class="text-white">
