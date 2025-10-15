@@ -10,11 +10,13 @@
 /***                                                           Common styles */
 header {
     font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
     font-size: 25px;
     font-weight: bold;
 }
 footer {
     font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
     font-weight: bold;
     padding: 46px;
 }
@@ -25,8 +27,26 @@ footer #social {
 }
 footer #footer-header {
     font-size: 30px;
-    text-decoration: none;
+    text-decoration: none; /* class text-decoration-none */
 }
 footer #footer-copyright {
     font-size: 15px;
 }
+/*****************************************************************************/
+
+/***                                                             Hero styles */
+#hero {
+    background-image: url("/images/Hero.png");
+    background-position: center;
+    height: 816px;
+}
+#hero > h1 {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: bold; /* class fw-bold */
+    font-size: 85px;
+}
+#hero > img {
+    max-height: 816px;
+}
+/*****************************************************************************/
