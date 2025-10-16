@@ -37,7 +37,7 @@ footer #footer-copyright {
 }
 /*****************************************************************************/
 
-/***                                                             Hero styles */
+/***                                                     Hero section styles */
 .hero {
     background-image: url("/images/Hero.png");
     background-size: cover;
@@ -67,7 +67,7 @@ footer #footer-copyright {
 }
 /*****************************************************************************/
 
-/***                                                             Jobs styles */
+/***                                                     Jobs section styles */
 #jobs {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
@@ -138,7 +138,7 @@ footer #footer-copyright {
 }
 /*****************************************************************************/
 
-/***                                                          Offices styles */
+/***                                                  Offices section styles */
 #offices {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
@@ -181,7 +181,7 @@ footer #footer-copyright {
 }
 /*****************************************************************************/
 
-/***                                                     Destinations styles */
+/***                                             Destinations section styles */
 #destinations {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
