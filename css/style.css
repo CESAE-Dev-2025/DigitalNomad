@@ -65,9 +65,10 @@ footer #footer-copyright {
     font-weight: normal;
     padding: 46px 65px;
     border-right: 1px solid black;
+
     @media (max-width: 991px) {
         border-right: none;
-        border-bottom: 1px solid black !important;
+        border-bottom: 1px solid black;
     }
 }
 .quote-emphasis {
@@ -75,7 +76,7 @@ footer #footer-copyright {
     font-weight: bold;
 }
 .job-details {
-    padding: 65px;
+    padding: 46px 65px;
 }
 .job-details > h2 {
     font-weight: bold;
