@@ -142,9 +142,6 @@ footer #footer-copyright {
 #offices {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
-    background-color: #000;
-    color: white;
 }
 .offices-bg {
     position: relative;
@@ -176,7 +173,46 @@ footer #footer-copyright {
 .btn-offices {
     border: 3px solid white;
     border-radius: 35px;
-    color: white;
+    padding: 18px 85px;
+    font-size: 25px;
+}
+/*****************************************************************************/
+
+/***                                                     Destinations styles */
+#destinations {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+}
+.destinations-bg {
+    position: relative;
+    width: 50%;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+.destinations-bg img {
+    display: block;
+    width: 100%;
+}
+.destinations-cta {
+    margin: auto;
+    max-width: 48em;
+    width: 50%;
+
+    @media (max-width: 991px) {
+        width: 100%;
+        margin-left: auto;
+        padding: 186px 64px 140px 64px;
+    }
+}
+.destinations-text {
+    font-size: 30px;
+    max-width: 400px;
+}
+.btn-destinations {
+    border: 3px solid black;
+    border-radius: 35px;
     padding: 18px 85px;
     font-size: 25px;
 }
