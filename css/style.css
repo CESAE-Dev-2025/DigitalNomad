@@ -65,6 +65,10 @@ footer #footer-copyright {
     font-weight: normal;
     padding: 46px 65px;
     border-right: 1px solid black;
+    @media (max-width: 991px) {
+        border-right: none;
+        border-bottom: 1px solid black !important;
+    }
 }
 .quote-emphasis {
     color: #686931;
