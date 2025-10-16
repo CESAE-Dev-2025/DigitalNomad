@@ -45,6 +45,21 @@ footer #footer-copyright {
     height: 816px;
     z-index: -1;
 }
+.hero-heading {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    top: calc((816px / 2) - 35px);
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 991px) {
+        position: absolute;
+        top: calc((816px / 2) + 35px);
+        /* left: 50% ;
+        top: calc(816px / 2) ;
+        transform: translate(-50%, -50%); */
+    }
+}
 .hero-heading > h1 {
     font-family: "Josefin Slab", serif;
     font-optical-sizing: auto;
