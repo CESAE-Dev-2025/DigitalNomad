@@ -70,11 +70,6 @@ footer #footer-copyright {
     padding: 46px 65px;
     border-right: 1px solid black;
 
-    /* @media (min-width: 576px) {
-        padding-left: 20px;
-        padding-right: 20px;
-    } */
-
     @media (max-width: 991px) {
         border-right: none;
         border-bottom: 1px solid black;
@@ -137,12 +132,19 @@ footer #footer-copyright {
     color: white;
 }
 .offices-bg {
-    padding-top: 120px;
+    /* padding-top: 120px; */
     background-image: url("/images/kombi.png");
     min-height: 515px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position-x: left;
+    background-position-y: bottom;
+    /* background-size: 50vw; */
+
+    @media (max-width: 991px) {
+        background-size: cover;
+        background-position-x: center;
+    }
 }
 .offices-text {
     font-size: 30px;
@@ -155,3 +157,14 @@ footer #footer-copyright {
     font-size: 25px;
 }
 /*****************************************************************************/
+#offices .row {
+    min-height: 515px;
+}
+.test-l {
+    border: 1px solid red;
+    /* min-height: 515px; */
+}
+.test-r {
+    border: 1px solid red;
+    /* margin: 0px; */
+}
