@@ -58,6 +58,10 @@ footer #footer-copyright {
     font-optical-sizing: auto;
     font-weight: normal;
     padding: 46px 112px;
+
+    @media (max-width: 991px) {
+        padding: 20px;
+    }
 }
 .job-quote {
     font-size: 43px;
@@ -66,9 +70,16 @@ footer #footer-copyright {
     padding: 46px 65px;
     border-right: 1px solid black;
 
+    /* @media (min-width: 576px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
+
     @media (max-width: 991px) {
         border-right: none;
         border-bottom: 1px solid black;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 .quote-emphasis {
@@ -77,6 +88,11 @@ footer #footer-copyright {
 }
 .job-details {
     padding: 46px 65px;
+
+    @media (max-width: 991px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .job-details > h2 {
     font-weight: bold;
