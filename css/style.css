@@ -170,7 +170,10 @@ footer #footer-copyright {
     font-size: 30px;
     max-width: 450px;
 }
-.btn-offices {
+.btn-offices,
+.btn-offices:hover,
+.btn-offices:visited,
+.btn-offices:focus-visible {
     border: 3px solid white;
     border-radius: 35px;
     padding: 18px 85px;
@@ -210,10 +213,32 @@ footer #footer-copyright {
     font-size: 30px;
     max-width: 400px;
 }
-.btn-destinations {
+.btn-destinations,
+.btn-destinations:hover,
+.btn-destinations:visited,
+.btn-destinations:focus-visible {
     border: 3px solid black;
     border-radius: 35px;
     padding: 18px 85px;
     font-size: 25px;
+}
+/*****************************************************************************/
+
+/***                                                     Blog section styles */
+#blog {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    background-image: url("/images/blog_bg.png");
+    background-size: cover;
+}
+.btn-blog,
+.btn-blog:hover,
+.btn-blog:visited,
+.btn-blog:focus-visible {
+    border: 3px solid black;
+    border-radius: 35px;
+    padding: 18px 85px;
+    font-size: 25px;
+    margin: 300px auto;
 }
 /*****************************************************************************/
