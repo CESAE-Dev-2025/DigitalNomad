@@ -147,30 +147,32 @@ footer #footer-copyright {
     color: white;
 }
 .offices-bg {
-    background-image: url("/images/kombi.png");
-    min-height: 515px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: bottom;
+    position: relative;
+    width: 44%;
 
     @media (max-width: 991px) {
-        background-image: none;
-
-        @media (max-width: 1199px) {
-            background-size: cover;
-            background-position-x: center;
-        }
+        display: none;
     }
 }
+.offices-bg img {
+    display: block;
+    width: 100%;
+}
 .offices-cta {
-    border: 1px solid red;
-    background-color: black;
-    min-height: 515px;
-    padding-top: 186px;
+    /* padding: 186px 64px 0px 64px; */
+    margin: auto;
+    max-width: 48em;
+    width: 56%;
+
+    @media (max-width: 991px) {
+        width: 100%;
+        margin-left: auto;
+        padding: 186px 64px 140px 64px;
+    }
 }
 .offices-text {
     font-size: 30px;
+    max-width: 450px;
 }
 .btn-offices {
     border: 3px solid white;
