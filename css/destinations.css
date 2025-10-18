@@ -111,33 +111,3 @@ footer #footer-copyright {
     }
 }
 /*****************************************************************************/
-.modal-dialog {
-    font-family: "Jura", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    padding: 35px;
-}
-.modal-content {
-    border-radius: 35px;
-    padding: 25px;
-}
-.modal-body {
-    font-size: 20px;
-}
-.btn-modal {
-    background-color: #61b2f5;
-    color: white;
-    border: 3px solid #61b2f5;
-    border-radius: 35px;
-    padding: 20px 125px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.btn-modal:hover {
-    border: 3px solid #61b2f5;
-    color: #61b2f5;
-    border-radius: 35px;
-    padding: 20px 125px;
-    font-size: 15px;
-    font-weight: bold;
-}
