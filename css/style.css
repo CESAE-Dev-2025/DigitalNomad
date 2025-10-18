@@ -55,9 +55,6 @@ footer #footer-copyright {
     @media (max-width: 991px) {
         position: absolute;
         top: calc((816px / 2) + 35px);
-        /* left: 50% ;
-        top: calc(816px / 2) ;
-        transform: translate(-50%, -50%); */
     }
 }
 .hero-heading > h1 {
