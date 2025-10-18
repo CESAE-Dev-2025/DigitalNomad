@@ -19,7 +19,7 @@ header {
     font-weight: bold;
 }
 nav {
-    padding-top: 35px !important;
+    z-index: 10;
 }
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -64,18 +64,77 @@ footer #footer-copyright {
 .hero-heading {
     position: relative;
     left: 50%;
-    top: 50%;
-    top: calc((816px / 2) - 35px);
-    transform: translate(-50%, -50%);
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 0;
+    padding-top: 120px;
 
     @media (max-width: 991px) {
-        position: absolute;
-        top: calc((816px / 2) + 35px);
+        padding-top: 20px;
     }
 }
-.hero-heading > h1 {
-    font-family: "Josefin Slab", serif;
-    font-optical-sizing: auto;
-    font-size: 85px;
+.hero-heading > p {
+    font-size: 20px;
+}
+#contact-form {
+    background-color: black;
+    padding: 65px;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+
+    & input,
+    textarea {
+        border-radius: 15px;
+    }
+}
+.d-grid {
+    margin-top: 70px;
+}
+.btn-contact,
+.btn-contact:hover,
+.btn-contact:visited,
+.btn-contact:focus-visible {
+    border: 3px solid white;
+    border-radius: 35px;
+    padding: 18px 85px;
+    font-size: 25px;
+}
+.quote {
+    padding-top: 90px;
+
+    @media (max-width: 991px) {
+        padding-top: 0px;
+    }
 }
 /*****************************************************************************/
+.modal-dialog {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 35px;
+}
+.modal-content {
+    border-radius: 35px;
+    padding: 25px;
+}
+.modal-body {
+    font-size: 20px;
+}
+.btn-modal {
+    background-color: #61b2f5;
+    color: white;
+    border: 3px solid #61b2f5;
+    border-radius: 35px;
+    padding: 20px 125px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-modal:hover {
+    border: 3px solid #61b2f5;
+    color: #61b2f5;
+    border-radius: 35px;
+    padding: 20px 125px;
+    font-size: 15px;
+    font-weight: bold;
+}
