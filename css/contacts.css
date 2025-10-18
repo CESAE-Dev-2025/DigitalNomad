@@ -1,0 +1,81 @@
+/***                                                  Project specific fonts */
+
+/**     Jura */
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/**     Josefin Slab */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*****************************************************************************/
+
+/***                                                           Common styles */
+body {
+    background-color: rgba(0, 0, 0, 0.55);
+    overflow-x: hidden;
+}
+header {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav {
+    padding-top: 35px !important;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+footer {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 46px;
+}
+footer #social {
+    margin-top: 28px;
+    margin-bottom: 35px;
+    opacity: 0.4;
+}
+footer #footer-header {
+    font-size: 30px;
+}
+footer #footer-copyright {
+    font-size: 15px;
+}
+/*****************************************************************************/
+
+/***                                                     Hero section styles */
+.hero {
+    background-image: url("/images/hero_contacts.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100vh;
+    background-blend-mode: saturation;
+    z-index: -1;
+}
+.hero-heading {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    top: calc((816px / 2) - 35px);
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 991px) {
+        position: absolute;
+        top: calc((816px / 2) + 35px);
+    }
+}
+.hero-heading > h1 {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-size: 85px;
+}
+/*****************************************************************************/
