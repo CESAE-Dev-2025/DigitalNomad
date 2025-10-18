@@ -15,7 +15,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Project specific CSS -->
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/destinations.css">
 </head>
 
 <body>
@@ -45,15 +45,15 @@
                                     href="index.html#offices">Acomodação</a>
                             </li>
                             <li class="nav-item ms-auto">
-                                <a class="nav-link text-white text-uppercase opacity-100 ps-4"
-                                    href="destinations.html">Locais</a>
+                                <a class="nav-link text-white text-uppercase opacity-100 ps-4" href="#">Locais</a>
                             </li>
                             <li class="nav-item ms-auto">
                                 <a class="nav-link text-white text-uppercase opacity-100 ps-4"
                                     href="index.html#blog">Blog</a>
                             </li>
                             <li class="nav-item ms-auto">
-                                <a class="nav-link text-white text-uppercase opacity-100 ps-4" href="#">Contatos</a>
+                                <a class="nav-link text-white text-uppercase opacity-100 ps-4"
+                                    href="contacts.html">Contatos</a>
                             </li>
                         </ul>
 
@@ -63,30 +63,31 @@
                 <!-- Hero section -->
                 <div
                     class="hero-heading d-flex flex-column gap-5 flex-lg-row justify-content-lg-between align-items-start">
-                    <div id="contact-form" class=" col-12 col-lg-6 col-xxl-4">
+                    <div id="location-form" class=" col-12 col-lg-6 col-xxl-4">
                         <form action="">
 
                             <div class="mb-3">
-                                <label for="name" class="form-label mb-0">Nome:</label>
-                                <input type="text" class="form-control form-control-lg" id="name">
+                                <label for="country" class="form-label">Escolha o país</label>
+                                <select class="form-select form-select-lg" name="country" id="country">
+                                    <option selected>País</option>
+                                    <option value="">Portugal</option>
+                                    <option value="">Itália</option>
+                                    <option value="">Brasil</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
-                                <label for="email" class="form-label mb-0">Email:</label>
-                                <input type="email" class="form-control form-control-lg" id="email"
-                                    aria-describedby="emailHelp">
-                            </div>
-
-                            <div class="mb-0">
-                                <label for="message" class="form-label mb-0">Mensagem</label>
-                                <textarea class="form-control form-control-lg" name="message" id="message"
-                                    rows="3"></textarea>
+                                <label for="city" class="form-label">Escolha a cidade</label>
+                                <select class="form-select form-select-lg" name="city" id="city">
+                                    <option selected>Cidade</option>
+                                    <option value="">Porto</option>
+                                    <option value="">Veneza</option>
+                                    <option value="">Rio de Janeiro</option>
+                                </select>
                             </div>
 
                             <div class="d-grid">
-                                <!-- Button lança modal -->
-                                <button type="submit" class="btn btn-contact text-white fw-bold" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Enviar</button>
+                                <button type="submit" class="btn btn-destination text-white fw-bold">Ver</button>
 
                             </div>
 
@@ -94,11 +95,11 @@
                         </form>
                     </div>
 
-                    <div class="quote col-12 col-lg-6 col-xxl-5">
+                    <!-- <div class="quote col-12 col-lg-6 col-xxl-5">
                         <p class="text-white text-center">“Viajar é descobrir que todos
                             estão errados sobre outros países.”</p>
                         <p class="text-end text-white">- Aldous Huxley</p>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

@@ -1,0 +1,143 @@
+/***                                                  Project specific fonts */
+
+/**     Jura */
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/**     Josefin Slab */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*****************************************************************************/
+
+/***                                                           Common styles */
+body {
+    background-color: rgba(0, 0, 0, 0.55);
+    overflow-x: hidden;
+}
+header {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav {
+    z-index: 10;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+footer {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 46px;
+}
+footer #social {
+    margin-top: 28px;
+    margin-bottom: 35px;
+    opacity: 0.4;
+}
+footer #footer-header {
+    font-size: 30px;
+}
+footer #footer-copyright {
+    font-size: 15px;
+}
+/*****************************************************************************/
+
+/***                                                     Hero section styles */
+.hero {
+    background-image: url("/images/hero_locations.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(30, 30, 30, 0.81);
+    height: 100vh;
+    background-blend-mode: saturation;
+    z-index: -1;
+}
+.hero-heading {
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 0;
+    padding-top: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 20px;
+    }
+}
+.hero-heading > p {
+    font-size: 20px;
+}
+#location-form {
+    background-color: #d9d9d9;
+    padding: 65px;
+    border-radius: 35px;
+    /* color: white; */
+    font-size: 25px;
+
+    & select {
+        border-radius: 15px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+.d-grid {
+    margin-top: 70px;
+}
+.btn-destination,
+.btn-destination:hover,
+.btn-destination:visited,
+.btn-destination:focus-visible {
+    background-color: #686931;
+    color: #1e1e1e !important;
+    border-radius: 15px;
+    padding: 18px 85px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.quote {
+    padding-top: 90px;
+
+    @media (max-width: 991px) {
+        padding-top: 0px;
+    }
+}
+/*****************************************************************************/
+.modal-dialog {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    padding: 35px;
+}
+.modal-content {
+    border-radius: 35px;
+    padding: 25px;
+}
+.modal-body {
+    font-size: 20px;
+}
+.btn-modal {
+    background-color: #61b2f5;
+    color: white;
+    border: 3px solid #61b2f5;
+    border-radius: 35px;
+    padding: 20px 125px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-modal:hover {
+    border: 3px solid #61b2f5;
+    color: #61b2f5;
+    border-radius: 35px;
+    padding: 20px 125px;
+    font-size: 15px;
+    font-weight: bold;
+}
