@@ -67,13 +67,14 @@
                         <form action="">
 
                             <div class="mb-3">
-                                <label for="country" class="form-label mb-0" onchange="updateCities()">Escolha o
+                                <label for="country" class="form-label mb-0">Escolha o
                                     país:</label>
-                                <select class="form-select form-select-lg" name="country" id="country">
+                                <select class="form-select form-select-lg" name="country" id="country"
+                                    onchange="updateCities()">
                                     <option selected disabled>País</option>
-                                    <option value="portugal">Portugal</option>
-                                    <option value="italy">Itália</option>
-                                    <option value="brazil">Brasil</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="it">Itália</option>
+                                    <option value="br">Brasil</option>
                                 </select>
                             </div>
 
@@ -81,9 +82,9 @@
                                 <label for="city" class="form-label mb-0">Escolha a cidade:</label>
                                 <select class="form-select form-select-lg" name="city" id="city">
                                     <option selected disabled>Cidade</option>
-                                    <option value="porto">Porto</option>
+                                    <!-- <option value="porto">Porto</option>
                                     <option value="venice">Veneza</option>
-                                    <option value="florianopolis">Florianópolis</option>
+                                    <option value="florianopolis">Florianópolis</option> -->
                                 </select>
                             </div>
 
@@ -147,15 +148,43 @@
         crossorigin="anonymous"></script>
 
     <script>
+        // Lista de opções de cidades, agrupadas por país, para carregar cidades ao mudar o país
+        const citiesByCountry = {
+            "pt": ["Porto", "Lisboa"],
+            "it": ["Veneza", "Roma"],
+            "br": ["Rio de Janeiro", "Florianópolis"],
+        };
+        const countrySelect = document.getElementById("country");
+        const citySelect = document.getElementById("city");
+
+        // Limpa conteúdo do select de cidades
+        function clearContent() {
+            var selectobject = document.getElementById("city");
+            while (selectobject.options.length > 1) {
+                selectobject.remove(1);
+            }
+        }
+
+        // Atualiza lista de cidades com base na selação do país
+        function updateCities() {
+            clearContent();
+            var selectedCountry = countrySelect.value;
+
+            for (const country of citiesByCountry[selectedCountry]) {
+                const option = document.createElement("option");
+
+                option.value = country.toLowerCase();
+                option.textContent = country;
+                citySelect.appendChild(option);
+            }
+        }
+
         function myFunction() {
-            var selectedCountry = document.getElementById("country");
-            console.log(selectedCountry.value);
+            var selectedCountry = countrySelect.value;
+            var selectedCity = citySelect.value;
 
-            var selectedCity = document.getElementById("city");
-            console.log(selectedCity.value);
-
-            var locationInfo = document.getElementById("location-info");
-            locationInfo.style.display = "flex";
+            // var locationInfo = document.getElementById("location-info");
+            // locationInfo.style.display = "flex";
         }
     </script>
 
