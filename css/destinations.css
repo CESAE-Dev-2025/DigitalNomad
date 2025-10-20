@@ -91,7 +91,7 @@ footer #footer-copyright {
     }
 }
 .d-grid {
-    margin-top: 70px;
+    margin-top: 125px;
 }
 .btn-destination,
 .btn-destination:hover,
@@ -105,8 +105,30 @@ footer #footer-copyright {
     font-size: 25px;
     font-weight: bold;
 }
-#location-info {
+.location-info {
     display: none;
+}
+#map {
+    height: 360px;
+    width: 465px;
+    border-radius: 10px;
+}
+.location-address {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.51);
+    color: #fff;
+    width: 465px;
+    border-radius: 35px;
+    padding: 40px 80px;
+    margin-top: 85px;
+
+    & h3 {
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
 }
 .collapsing {
     transition: none !important;
