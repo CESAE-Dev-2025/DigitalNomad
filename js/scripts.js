@@ -74,6 +74,7 @@ function myFunction() {
         ? console.warn(p + " only loads once. Ignoring:", g)
         : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
 })({
+    // Key restricted on Google Cloud
     key: "AIzaSyAygYFoFFrLQX4OMF042RO6gSyPO9EMa9o",
     v: "weekly",
     // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
