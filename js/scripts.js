@@ -37,8 +37,6 @@ function myFunction() {
     locationInfo.style.display = "flex";
 }
 
-// TODO: Mudar localização do mapa dinamicamente
-
 ((g) => {
     var h,
         a,
@@ -85,26 +83,8 @@ function myFunction() {
 let map;
 
 async function initMap() {
-    // Localização de Lisboa
-    const lisbonPosition = { lat: 38.716902688561724, lng: -9.238869231553236 };
-
     // Localização do Porto
     const portoPosition = { lat: 41.156748407993554, lng: -8.601907904967781 };
-
-    // Localização de Veneza
-    const veniceLocation = { lat: 45.436671859076256, lng: 12.320076465649755 };
-
-    // Localização de Roma
-    const romeLocation = { lat: 41.91278044013836, lng: 12.47419752932365 };
-
-    // Localização de Florianópolis
-    const florianopolisLocation = {
-        lat: -27.588688651762062,
-        lng: -48.542850464735544,
-    };
-
-    // Localização do Rio de Janeiro
-    const rioLocation = { lat: -22.899676062658312, lng: -43.17915949784932 };
 
     // Request needed libraries.
     //@ts-ignore
