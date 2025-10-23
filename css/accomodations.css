@@ -128,7 +128,42 @@ footer #footer-copyright {
 /*****************************************************************************/
 
 /***                                                            Modal styles */
-.modal-content > .card-img-top {
-    max-width: 680px !important;
+.modal-content {
+    max-width: 750px !important;
+    padding: 34px;
+    border-radius: 35px;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 20px;
+
+    & .card-img-top {
+        border-radius: 15px;
+    }
+
+    & h5 {
+        font-size: 30px;
+    }
+}
+.modal-body {
+    padding: 0;
+
+    & .modal-title {
+        margin: 20px 0 36px;
+    }
+
+    & ul {
+        list-style-type: "✔";
+    }
+
+    & .btn-modal {
+        display: inline-block;
+        background-color: #686931;
+        color: #1e1e1e !important;
+        border-radius: 15px;
+        padding: 23px 130px;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
 /*****************************************************************************/
