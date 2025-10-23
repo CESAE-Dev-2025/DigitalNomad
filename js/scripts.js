@@ -1,42 +1,43 @@
-// Lista de opções de cidades, agrupadas por país, para carregar cidades ao mudar o país
-const citiesByCountry = {
-    pt: ["Porto", "Lisboa"],
-    it: ["Veneza", "Roma"],
-    br: ["Rio de Janeiro", "Florianópolis"],
-};
-const countrySelect = document.getElementById("country");
-const citySelect = document.getElementById("city");
-
-// Limpa conteúdo do select de cidades
-function clearContent() {
-    var selectobject = document.getElementById("city");
-    while (selectobject.options.length > 1) {
-        selectobject.remove(1);
-    }
-}
-
-// Atualiza lista de cidades com base na selação do país
-function updateCities() {
-    clearContent();
-    var selectedCountry = countrySelect.value;
-
-    for (const country of citiesByCountry[selectedCountry]) {
-        const option = document.createElement("option");
-
-        option.value = country.toLowerCase();
-        option.textContent = country;
-        citySelect.appendChild(option);
-    }
-    citySelect.value = 0;
-}
-
-function myFunction() {
+function showMap() {
     var selectedCity = citySelect.value;
 
     var locationInfo = document.getElementById(selectedCity);
     locationInfo.style.display = "flex";
 }
 
+// Validação do form de contacto
+(() => {
+    "use strict";
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach((form) => {
+        form.addEventListener(
+            "submit",
+            (event) => {
+                event.preventDefault();
+
+                if (!form.checkValidity()) {
+                    event.stopPropagation();
+                    form.classList.add("was-validated");
+                } else {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    form.classList.remove("was-validated");
+
+                    const contactModal = new bootstrap.Modal("#contactModal");
+                    contactModal.show();
+                }
+            },
+            false
+        );
+    });
+})();
+
+// Maps API
 ((g) => {
     var h,
         a,
@@ -96,7 +97,7 @@ async function initMap() {
         zoom: 15,
         center: portoPosition,
         disableDefaultUI: true,
-        mapId: "Teste",
+        mapId: "DigitalNomad",
     });
 
     // O marcador, definido na constante posittion (acima)
