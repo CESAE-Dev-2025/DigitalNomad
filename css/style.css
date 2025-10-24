@@ -225,7 +225,7 @@ footer #footer-copyright {
 #blog {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
-    background-image: url("images/blog_bg.png");
+    background-image: url("images/blog-bg.png");
     background-size: cover;
 }
 .btn-blog,
