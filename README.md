@@ -160,7 +160,6 @@ Agradeço também aos mantenedores dos projetos listados abaixo:
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-## mcvmv
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: images/README_cover.png
 [product-home]: images/LivingAround_home.png
