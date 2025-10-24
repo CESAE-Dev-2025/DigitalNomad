@@ -63,13 +63,13 @@ E fazemos da seguinte formma:
 ### Capturas de ecrã
 
 <p style="display: flex; justify-content: space-between;">
-  <img src="images/LivingAround_home.png" style="max-width: 45%;" alt="Home page">
-  <img src="images/LivingAround_accomodations.png" style="max-width: 45%;" alt="Accomodations page">
+  <img src="images/LivingAround_home.png" style="width: 45%;" alt="Home page">
+  <img src="images/LivingAround_accomodations.png" style="width: 45%;" alt="Accomodations page">
 </p>
 <br>
 <p style="display: flex; justify-content: space-between;">
-  <img src="images/LivingAround_destinations.png" style="max-width: 45%;" alt="Destinations page">
-  <img src="images/LivingAround_contacts.png" style="max-width: 45%;" alt="Contact page">
+  <img src="images/LivingAround_destinations.png" style="width: 45%;" alt="Destinations page">
+  <img src="images/LivingAround_contacts.png" style="width: 45%;" alt="Contact page">
 </p>
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
