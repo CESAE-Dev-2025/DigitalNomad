@@ -1,8 +1,17 @@
 function showMap() {
+    const countrySelect = document.getElementById("country");
+    const citySelect = document.getElementById("city");
     var selectedCity = citySelect.value;
+    var selectedCountry = countrySelect.value;
 
-    var locationInfo = document.getElementById(selectedCity);
-    locationInfo.style.display = "flex";
+    console.log(selectedCity);
+    console.log(selectedCountry);
+
+    var locationInfo = document.getElementById("location-info");
+
+    if (selectedCity != 0 && selectedCountry != 0) {
+        locationInfo.classList.remove("d-none");
+    }
 }
 
 // Validação do form de contacto

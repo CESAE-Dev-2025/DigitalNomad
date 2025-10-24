@@ -69,9 +69,8 @@
                             <div class="mb-5">
                                 <label for="country" class="form-label mb-0">Escolha o
                                     país:</label>
-                                <select class="form-select form-select-lg" name="country" id="country"
-                                    onchange="updateCities()">
-                                    <option selected disabled>País</option>
+                                <select class="form-select form-select-lg" name="country" id="country">
+                                    <option value="0" selected disabled>País</option>
                                     <option value="pt">Portugal</option>
                                 </select>
                             </div>
@@ -92,7 +91,8 @@
                         </form>
                     </div>
 
-                    <div id="location-info" class="col-12 col-lg-6 col-xxl-5 d-flex flex-column justify-content-around">
+                    <div id="location-info"
+                        class="d-none col-12 col-lg-6 col-xxl-5 d-flex flex-column justify-content-around">
                         <div id="map" class="flex-fill"></div>
                         <div class="location-address">
                             <h3><span class="text-uppercase">Living Around</span> - Porto</h3>
