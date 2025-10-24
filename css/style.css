@@ -136,11 +136,11 @@ footer #footer-copyright {
 /*****************************************************************************/
 
 /***                                                  Offices section styles */
-#offices {
+#accomodations {
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
 }
-.offices-bg {
+.accomodations-bg {
     position: relative;
     width: 44%;
 
@@ -148,11 +148,11 @@ footer #footer-copyright {
         display: none;
     }
 }
-.offices-bg img {
+.accomodations-bg img {
     display: block;
     width: 100%;
 }
-.offices-cta {
+.accomodations-cta {
     margin: auto;
     max-width: 48em;
     width: 56%;
@@ -163,14 +163,14 @@ footer #footer-copyright {
         padding: 186px 64px 140px 64px;
     }
 }
-.offices-text {
+.accomodations-text {
     font-size: 30px;
     max-width: 450px;
 }
-.btn-offices,
-.btn-offices:hover,
-.btn-offices:visited,
-.btn-offices:focus-visible {
+.btn-accomodations,
+.btn-accomodations:hover,
+.btn-accomodations:visited,
+.btn-accomodations:focus-visible {
     border: 3px solid white;
     border-radius: 35px;
     padding: 18px 85px;
