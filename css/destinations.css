@@ -57,20 +57,20 @@ footer #footer-copyright {
     background-size: cover;
     background-position: center;
     background-color: rgba(30, 30, 30, 0.81);
-    height: 100vh;
+    min-height: 100vh;
     background-blend-mode: saturation;
     z-index: -1;
 }
 .hero-heading {
     position: relative;
     left: 50%;
-    bottom: 20px;
+    top: 20px;
     transform: translateX(-50%);
     z-index: 0;
     padding: 120px 40px;
 
     @media (max-width: 991px) {
-        padding-top: 20px;
+        padding: 0px;
     }
 }
 .hero-heading > p {
@@ -89,6 +89,10 @@ footer #footer-copyright {
         background-size: 30px;
         background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-caret-down-fill%22%20viewBox%3D%220%200%2016%2016%22%3E%20%3Cpath%20d%3D%22M7.247%2011.14%202.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E");
     }
+
+    @media (max-width: 991px) {
+        padding: 70px 25px;
+    }
 }
 .d-grid {
     margin-top: 125px;
@@ -101,16 +105,19 @@ footer #footer-copyright {
     background-color: #686931;
     color: #1e1e1e !important;
     border-radius: 15px;
-    padding: 18px 85px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     font-size: 25px;
     font-weight: bold;
 }
-.location-info {
-    display: none;
+#location-info {
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
 }
 #map {
     height: 360px;
-    width: 465px;
+    /* width: 465px; */
     border-radius: 10px;
 }
 .location-address {
@@ -120,14 +127,23 @@ footer #footer-copyright {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.51);
     color: #fff;
-    width: 465px;
     border-radius: 35px;
     padding: 40px 80px;
     margin-top: 85px;
+    margin-bottom: 25px;
 
     & h3 {
         font-size: 25px;
         margin-bottom: 16px;
+    }
+
+    & p:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: 991px) {
+        margin-top: 35px;
+        padding: 25px;
     }
 }
 .collapsing {
