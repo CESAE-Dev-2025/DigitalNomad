@@ -4,13 +4,13 @@ function showMap() {
     var selectedCity = citySelect.value;
     var selectedCountry = countrySelect.value;
 
-    console.log(selectedCity);
-    console.log(selectedCountry);
-
     var locationInfo = document.getElementById("location-info");
 
     if (selectedCity != 0 && selectedCountry != 0) {
         locationInfo.classList.remove("d-none");
+    } else {
+        const locationModal = new bootstrap.Modal("#locationModal");
+        locationModal.show();
     }
 }
 
