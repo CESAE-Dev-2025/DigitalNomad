@@ -36,7 +36,6 @@
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contato</a></li>
     <li><a href="#acknowledgments">Agradecimentos</a></li>
