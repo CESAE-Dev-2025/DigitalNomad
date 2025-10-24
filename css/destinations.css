@@ -53,7 +53,7 @@ footer #footer-copyright {
 
 /***                                                     Hero section styles */
 .hero {
-    background-image: url("/images/hero_locations.png");
+    background-image: url("../images/hero_locations.png");
     background-size: cover;
     background-position: center;
     background-color: rgba(30, 30, 30, 0.81);
